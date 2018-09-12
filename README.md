@@ -10,20 +10,20 @@ To get started, you must download Eclipse Mars (4.5.2). https://eclipse.org/mars
 
 Prerequisite Software
 
-    Install Java SE JDK 7
+    Install Java SE JDK 8
         Make sure you install the JDKand not the JRE.
         Run the installer
         Set the JAVA_HOME environment variable to point to the root of the JDK installation
             Navigate to Start -> Control Panel -> System -> Advanced, then click Environment Variables.
             Under User Variables, click New
             Use JAVA_HOME for Variable Name
-            Set Variable Value to the path of the JDK, by default it should be: C:\Program Files\Java\jdk1.7.0_01 (depending on which version of the JDK you install, the numbers may differ slightly)
+            Set Variable Value to the path of the JDK, by default it should be: C:\Program Files\Java\jdk1.8.0_01 (depending on which version of the JDK you install, the numbers may differ slightly)
         Verify the environment variable was set by navigating to Start -> Run, then type: cmd
         In the command prompt, type: echo %JAVA_HOME%
             It should output the path that was placed in the Variable Value field
 
 
-C:\Documents and Settings\Dave>echo %JAVA_HOME% C:\Program Files\Java\jdk1.7.0_01 ```
+C:\Documents and Settings\user>echo %JAVA_HOME% C:\Program Files\Java\jdk1.8.0_01 ```
 
     Install Maven (Last tested version was Maven 3.3.9)
         Follow the installation instructions 
