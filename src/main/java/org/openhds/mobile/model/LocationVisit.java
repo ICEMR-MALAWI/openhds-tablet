@@ -299,7 +299,7 @@ public class LocationVisit implements Serializable {
     private String generateLocationId(ContentResolver resolver) {
         Cursor cursor = resolver.query(OpenHDS.Locations.CONTENT_ID_URI_BASE,
                 new String[] { OpenHDS.Locations.COLUMN_LOCATION_EXTID }, OpenHDS.Locations.COLUMN_LOCATION_EXTID
-                        + " LIKE ?", new String[] { getLatestLevelExtId() + "%" }, OpenHDS.Locations.COLUMN_LOCATION_EXTID
+                        + " LIKE ?", new String[] { getLatestLevelExtId() + fieldWorker.getExtId().substring(2,5) + "%" }, OpenHDS.Locations.COLUMN_LOCATION_EXTID
                         + " DESC");
 
         String generatedId = null;
